@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li class="header__item header__position">
+                    <a href="./index.html">
+                        Главная страница
+                    </a>
+                </li>
+                <li class="header__item header__position">
+                    <a href="./page2.html">
+                        Позиционирование элементов
+                    </a>
+                </li>
+                <li class="header__item header__current">
+                    <a href="#">
+                        Текущая страница
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="table">
+
+            <table>
+                <caption class="table__caption">
+                    Таблица с информацией о людях
+                </caption>
+                <thead class="table__head">
+                    <tr>
+                        <th>id</th>
+                        <th>ФИО</th>
+                        <th>номер зачётной книжки</th>
+                        <th>номер группа</th>
+                        <th>пол</th>
+                        <th>возраст</th>
+                        <th>форма поступления</th>
+                        <th>название направления</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+                    <tr>
+                        <td>1023</td>
+                        <td>Цибизов Артём Сергеевич</td>
+                        <td>12345</td>
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        <td>очная</td>
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1024</td>
+                        <td>Цибизов Артём Сергеевич</td>
+                        <td>19345</td>
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        <td>очная</td>
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1025</td>
+                        <td>Цибизов Артём Сергеевич</td>
+                        <td>12045</td>
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        <td>очная</td>
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1026</td>
+                        <td>Цибизов Артём Сергеевич</td>
+                        <td>10345</td>
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        <td>очная</td>
+                        <td>ИВТ</td>
+                    </tr>
+                    <tr>
+                        <td>1027</td>
+                        <td>Цибизов Артём Сергеевич</td>
+                        <td>12354</td>
+                        <td>6201</td>
+                        <td>м</td>
+                        <td>19</td>
+                        <td>очная</td>
+                        <td>ИВТ</td>
+                    </tr>
+    
+                </tbody>
+                
+            </table>
+
+        </div>
+        
+    </div>  
+    <div class="container">
+        <form class="form-student" action="http://localhost:8080/addStudent" method="post">
+            <div class="form-student__field">
+                <label for="student-id">id</label><br>
+                <input type="text" name="id" id="student-id" 
+                        required minlength="3" maxlength="20">
+            </div>
+            <div class="form-student__field">
+                <label for="student-fio">ФИО</label><br>
+                <input type="text" name="fio" id="student-fio"
+                        required minlength="3" maxlength="40">
+            </div>
+            <div class="form-student__field">
+                <label for="student-book-id">Номер зачётной книжки</label><br>
+                <input type="text" name="book-id" id="student-book-id"
+                        required minlength="3" maxlength="20">
+            </div>
+            <div class="form-student__field">
+                <label for="student-group-id">Номер группы</label><br>
+                <input type="text" name="group-id" id="student-group-id"
+                        required minlength="3" maxlength="20">
+            </div>
+            <div class="form-student__field">
+                <label for="student-sex">Пол</label><br>
+                <input type="text" name="sex" id="student-sex"
+                        required minlength="1" maxlength="20">
+            </div>
+            <div class="form-student__field">
+                <label for="student-age">Возраст</label><br>
+                <input type="text" name="age" id="student-age"
+                        required minlength="2" maxlength="20">
+            </div>
+            <div class="form-student__field">
+                <label for="student-form-of-study">Форма поступления</label><br>
+                <input type="text" name="form-of-study" id="student-form-of-study"
+                        required minlength="3" maxlength="20">
+            </div>
+            <div class="form-student__field">
+                <label for="student-field-of-study">Название направления</label><br>
+                <input type="text" name="field-of-study" id="student-field-of-study"
+                        required minlength="3" maxlength="20">
+            </div>
+            
+            <div class="form-student__button">
+                <button type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
